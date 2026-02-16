@@ -13,8 +13,9 @@ def predict_pk(params):
     pc_pred = np.array([gp.predict(params_scaled)[0] for gp in gps])
 
     # Reconstruct log(Pk) and exponentiate
-    log_pk_pred = pca.inverse_transform(pc_pred)
+    log_pk_pred = pca.inverse_transform(pc_pred.reshape(1, -1)).flatten()
     pk_pred = np.exp(log_pk_pred)
 
     return pk_pred
+
     

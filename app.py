@@ -36,10 +36,10 @@ app.layout = html.Div([
         "Matter Power Spectrum Emulator",
         style={
             'textAlign': 'center',
-            'fontFamily': '"Times New Roman", serif',  # elegant, math-friendly
-            'fontSize': '36px',                        # larger than default
-            'color': '#1f77b4',                        # Plotly blue
-            'textShadow': '2px 2px 4px rgba(0,0,0,0.3)',  # subtle shadow
+            'fontFamily': '"Times New Roman", serif',
+            'fontSize': '36px',
+            'color': '#1f77b4',
+            'textShadow': '2px 2px 4px rgba(0,0,0,0.3)',
             'marginTop': '20px',
             'marginBottom': '20px',
             'fontWeight': 'bold',
@@ -160,7 +160,7 @@ app.layout = html.Div([
                 id="reset-button",
                 n_clicks=0,
                 style={
-                    "backgroundColor": "#1f77b4",  # Plotly blue
+                    "backgroundColor": "#1f77b4",  # same as above
                     "color": "white",
                     "border": "none",
                     "padding": "10px 20px",
