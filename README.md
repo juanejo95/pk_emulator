@@ -16,6 +16,17 @@ The emulator uses a pre-trained model to predict the power spectrum without need
 - Real-time plot updates for the matter power spectrum $P(k)$.
 - Reset to default cosmological parameters with one click.
 
+## Usage
+
+1. Run the Dash app:
+
+```bash
+python app.py
+```
+2. Open your browser and go to:
+http://127.0.0.1:8050
+
+
 ## Requirements
 
 - numpy
