@@ -69,14 +69,14 @@ app.layout = html.Div([
             dcc.Slider(
                 min=h_bounds[0],
                 max=h_bounds[1],
-                step=(h_bounds[1]-h_bounds[0])/100,
+                step=(h_bounds[1]-h_bounds[0])/50,
                 value=h_default,
                 marks={
                     h_bounds[0]: f"{h_bounds[0]:.2f}",
                     h_bounds[1]: f"{h_bounds[1]:.2f}"
                 },
                 id="h",
-                updatemode='mouseup',
+                updatemode='drag',
             ),
             html.Br(),
 
@@ -84,14 +84,14 @@ app.layout = html.Div([
             dcc.Slider(
                 min=Omega_c_bounds[0],
                 max=Omega_c_bounds[1],
-                step=(Omega_c_bounds[1]-Omega_c_bounds[0])/100,
+                step=(Omega_c_bounds[1]-Omega_c_bounds[0])/50,
                 value=Omega_c_default,
                 marks={
                     Omega_c_bounds[0]: f"{Omega_c_bounds[0]:.2f}",
                     Omega_c_bounds[1]: f"{Omega_c_bounds[1]:.2f}"
                 },
                 id="Omega_c",
-                updatemode='mouseup',
+                updatemode='drag',
             ),
             html.Br(),
 
@@ -99,14 +99,14 @@ app.layout = html.Div([
             dcc.Slider(
                 min=Omega_b_bounds[0],
                 max=Omega_b_bounds[1],
-                step=(Omega_b_bounds[1]-Omega_b_bounds[0])/100,
+                step=(Omega_b_bounds[1]-Omega_b_bounds[0])/50,
                 value=Omega_b_default,
                 marks={
                     Omega_b_bounds[0]: f"{Omega_b_bounds[0]:.2f}",
                     Omega_b_bounds[1]: f"{Omega_b_bounds[1]:.2f}"
                 },
                 id="Omega_b",
-                updatemode='mouseup',
+                updatemode='drag',
             ),
             html.Br(),
 
@@ -114,14 +114,14 @@ app.layout = html.Div([
             dcc.Slider(
                 min=Asx1e9_bounds[0],
                 max=Asx1e9_bounds[1],
-                step=(Asx1e9_bounds[1]-Asx1e9_bounds[0])/100,
+                step=(Asx1e9_bounds[1]-Asx1e9_bounds[0])/50,
                 value=Asx1e9_default,
                 marks={
                     Asx1e9_bounds[0]: f"{Asx1e9_bounds[0]:.2f}",
                     Asx1e9_bounds[1]: f"{Asx1e9_bounds[1]:.2f}"
                 },
                 id="Asx1e9",
-                updatemode='mouseup',
+                updatemode='drag',
             ),
             html.Br(),
 
@@ -129,14 +129,14 @@ app.layout = html.Div([
             dcc.Slider(
                 min=ns_bounds[0],
                 max=ns_bounds[1],
-                step=(ns_bounds[1]-ns_bounds[0])/100,
+                step=(ns_bounds[1]-ns_bounds[0])/50,
                 value=ns_default,
                 marks={
                     ns_bounds[0]: f"{ns_bounds[0]:.2f}",
                     ns_bounds[1]: f"{ns_bounds[1]:.2f}"
                 },
                 id="ns",
-                updatemode='mouseup',
+                updatemode='drag',
             ),
             html.Br(),
 
@@ -144,14 +144,14 @@ app.layout = html.Div([
             dcc.Slider(
                 min=mnu_bounds[0],
                 max=mnu_bounds[1],
-                step=(mnu_bounds[1]-mnu_bounds[0])/100,
+                step=(mnu_bounds[1]-mnu_bounds[0])/50,
                 value=mnu_default,
                 marks={
                     mnu_bounds[0]: f"{mnu_bounds[0]:.2f}",
                     mnu_bounds[1]: f"{mnu_bounds[1]:.2f}"
                 },
                 id="mnu",
-                updatemode='mouseup',
+                updatemode='drag',
             ),
             html.Br(),
 
