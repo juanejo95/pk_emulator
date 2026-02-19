@@ -192,11 +192,14 @@ def update_pk(h, Omega_c, Omega_b, Asx1e9, ns, mnu):
     pk = predict_pk([h, Omega_c, Omega_b, Asx1e9, ns, mnu])
 
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=kh, y=pk_default*h_default**3, mode="lines", line=dict(color="black")))
-    fig.add_trace(go.Scatter(x=kh, y=pk*h**3, mode="lines"))
+    fig.add_trace(go.Scatter(x=kh/h_default, y=pk_default*h_default**3, mode="lines", line=dict(color="black")))
+    fig.add_trace(go.Scatter(x=kh/h, y=pk*h**3, mode="lines"))
 
-    y_min = 1e-1  # adjust if needed
-    y_max = 5e4   # adjust if needed
+    x_min = 2e-4
+    x_max = 1e1
+    
+    y_min = 1e-1
+    y_max = 5e4
 
     fig.update_layout(
         showlegend=False,
@@ -204,7 +207,8 @@ def update_pk(h, Omega_c, Omega_b, Asx1e9, ns, mnu):
             type="log",
             exponentformat="e",
             showexponent="all",
-            title=r"$k\ [h/{\rm Mpc}]$",
+            title=r"$k\ [{\rm Mpc}^{-1}]$",
+            range=[np.log10(x_min), np.log10(x_max)]
         ),
         yaxis=dict(
             type="log",
