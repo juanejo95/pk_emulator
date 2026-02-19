@@ -234,4 +234,4 @@ def reset_sliders(n_clicks):
     return h_default, Omega_c_default, Omega_b_default, Asx1e9_default, ns_default, mnu_default
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="127.0.0.1", port=8050)
