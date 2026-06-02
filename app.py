@@ -192,8 +192,8 @@ def update_pk(h, Omega_c, Omega_b, Asx1e9, ns, mnu):
     pk = predict_pk([h, Omega_c, Omega_b, Asx1e9, ns, mnu])
 
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=kh/h_default, y=pk_default*h_default**3, mode="lines", line=dict(color="black")))
-    fig.add_trace(go.Scatter(x=kh/h, y=pk*h**3, mode="lines"))
+    fig.add_trace(go.Scatter(x=kh*h_default, y=pk_default/h_default**3, mode="lines", line=dict(color="black")))
+    fig.add_trace(go.Scatter(x=kh*h, y=pk/h**3, mode="lines"))
 
     x_min = 2e-4
     x_max = 1e1
