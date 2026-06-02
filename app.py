@@ -195,11 +195,11 @@ def update_pk(h, Omega_c, Omega_b, Asx1e9, ns, mnu):
     fig.add_trace(go.Scatter(x=kh*h_default, y=pk_default/h_default**3, mode="lines", line=dict(color="black")))
     fig.add_trace(go.Scatter(x=kh*h, y=pk/h**3, mode="lines"))
 
-    x_min = 2e-4
-    x_max = 1e1
+    x_min = 1e-4
+    x_max = 5e0
     
-    y_min = 1e-1
-    y_max = 5e4
+    y_min = 2e-1
+    y_max = 7e4
 
     fig.update_layout(
         showlegend=False,
