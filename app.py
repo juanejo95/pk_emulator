@@ -199,7 +199,7 @@ def update_pk(h, Omega_c, Omega_b, Asx1e9, ns, mnu):
     x_max = 5e0
     
     y_min = 2e-1
-    y_max = 7e4
+    y_max = 2e5
 
     fig.update_layout(
         showlegend=False,
